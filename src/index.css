@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0080ff;
+}
+
+.rating-container {
+  text-align: center;
+  padding: 40px 30px;
+  border: 1px solid #ddd;
+  width: 400px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.star {
+  transition: color 0.2s ease-in-out;
+  color: #ccc;
+}
+
+.star.active {
+  color: gold;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+.submit-btn {
+  background-color: blue; /* green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:disabled {
+  background-color: #45a049; /* darker green */
+}
+/* Submit Button */
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+.close-btn {
+  margin-top: 8px;  /* reduce the space above Close */
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+}
