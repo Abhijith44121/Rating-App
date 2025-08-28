@@ -1,4 +1,4 @@
-~React Rating App~
+React Rating App
 
 A simple interactive star rating app built with React.
 Users can click on stars to give ratings from 1 to 5.
