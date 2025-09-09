@@ -46,36 +46,32 @@ body {
   font-weight: bold;
   color: #333;
 }
+
+/* Submit Button */
 .submit-btn {
-  background-color: blue; /* green */
+  margin-top: 15px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #4caf50;
   color: white;
-  padding: 12px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
-  font-size: 16px;
   transition: background 0.3s ease;
 }
 
 .submit-btn:disabled {
-  background-color: #45a049; /* darker green */
-}
-/* Submit Button */
-.submit-btn {
-  background-color: #4caf50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
+  background-color: gray;
+  cursor: not-allowed;
 }
 
-.submit-btn:hover {
+.submit-btn:hover:not(:disabled) {
   background-color: #45a049;
 }
+
+/* Close Button */
 .close-btn {
-  margin-top: 8px;  /* reduce the space above Close */
+  margin-top: 8px;
   padding: 10px 24px;
   font-size: 16px;
   font-weight: 500;
